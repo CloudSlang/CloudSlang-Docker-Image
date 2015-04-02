@@ -8,7 +8,7 @@ WORKDIR /cslang/
 
 RUN apt-get update \
 	&& apt-get install -y \
-	%% apt-get install unzip
+	&& apt-get install unzip
 
 RUN unzip cslang-cli.zip
 
