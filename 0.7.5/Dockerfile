@@ -6,6 +6,8 @@ ADD https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.6
 
 WORKDIR /cslang/
 
+RUN apt-get install unzip
+
 RUN unzip cslang-cli.zip
 
 RUN ls
