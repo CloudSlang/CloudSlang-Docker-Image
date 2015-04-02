@@ -12,4 +12,6 @@ RUN apt-get update \
 
 RUN unzip cslang-cli.zip
 
-RUN ls
+WORKDIR /cslang/cslang/cslang/bin/
+
+CMD ["bash","cslang"]
