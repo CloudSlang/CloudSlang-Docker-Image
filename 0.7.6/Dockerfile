@@ -7,6 +7,3 @@ RUN apt-get install unzip \
     && unzip cslang-cli.zip \
     && rm cslang-cli.zip
 
-WORKDIR /cslang/cslang/cslang/bin/
-
-CMD ["bash","cslang"]
