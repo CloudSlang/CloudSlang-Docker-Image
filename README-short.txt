@@ -1,1 +1,1 @@
-# CloudSlang-Docker-Image
+CloudSlang : workflow engine to orchestrate DevOps process, http://www.cloudslang.io/
