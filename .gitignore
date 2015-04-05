@@ -1,0 +1,11 @@
+target/
+output/
+*.class
+*.log
+.idea/
+*.ipr
+*.iml
+.settings/
+.project
+.classpath
+*.history
