@@ -15,10 +15,10 @@ Dockerfile can be found here : https://github.com/CloudSlang/CloudSlang-Docker-I
 
 1. To start the CloudSlang CLI just use:
 
-```docker run -it cloudslang/cloudslang```
+  ```docker run -it cloudslang/cloudslang```
 
 2. To trigger you first simple flow , type this cmd:
 
-``` run --f ../../content/io/cloudslang/base/print/print_text.sl --i text=first_flow ```
+  ``` run --f ../../content/io/cloudslang/base/print/print_text.sl --i text=first_flow ```
  
 ### Issues & contributions
