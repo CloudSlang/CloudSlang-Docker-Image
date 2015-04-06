@@ -13,6 +13,6 @@ Dockerfile can be found here : https://github.com/CloudSlang/CloudSlang-Docker-I
 
 ### How-to/usage
 
-docker run -it cloudslang
+```docker run -it cloudslang```
 
 ### Issues & contributions
