@@ -4,4 +4,9 @@ MAINTAINER Meir Wahnon
 
 RUN apt-get install unzip \
   && wget "http://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.6/cslang-cli.zip" \
-  && unzip cslang-cli.zip 
+  && unzip cslang-cli.zip \
+  && rm cslang-cli.zip
+
+WORKDIR /cslang/cslang/cslang/bin/
+
+CMD ["bash","cslang"]
