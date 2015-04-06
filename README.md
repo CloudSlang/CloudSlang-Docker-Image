@@ -3,9 +3,13 @@ The Docker image for CloudSlang CLI - still under dev!! do not use yet..
 
 ### Overview & links
 
-CloudSlang is a flow-based orchestration tool for managing your deployed applications. Rapidly automate your DevOps use cases using ready-made workflows.
+CloudSlang is a flow-based orchestration tool for managing your deployed applications. 
+Rapidly automate your DevOps use cases using ready-made workflows.
+It provides Docker capabilities and integrations with Docker eco-system projects.
 
 You can read more on it here : http://www.cloudslang.io/
+
+Dockerfile can be found here : https://github.com/CloudSlang/CloudSlang-Docker-Image/blob/master/0.7.6/Dockerfile
 
 ### How-to/usage
 
