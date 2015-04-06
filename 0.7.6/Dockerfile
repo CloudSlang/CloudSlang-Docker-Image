@@ -9,7 +9,7 @@ RUN apt-get install unzip \
   && cd /usr/cslang \
   && wget "http://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.7.6/cslang-cli.zip" \
   && unzip cslang-cli.zip \
-  && rm cslang-cli.zip \
+  && rm cslang-cli.zip
 
 WORKDIR /usr/cslang/cslang/cslang/bin/
 
