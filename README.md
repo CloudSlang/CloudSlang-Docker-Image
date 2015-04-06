@@ -22,3 +22,15 @@ Dockerfile can be found here : https://github.com/CloudSlang/CloudSlang-Docker-I
   ``` run --f ../../content/io/cloudslang/base/print/print_text.sl --i text=first_flow ```
  
 ### Issues & contributions
+
+Feel free to open issues on our GitHub page :
+https://github.com/CloudSlang/CloudSlang-Docker-Image/issues
+
+Or contact using our mailing list:
+https://groups.google.com/forum/#!forum/cloudslang
+
+For contributing look at: 
+https://docs.docker.com/contributing/contributing/
+http://www.cloudslang.io/#/docs#contributing-code
+
+
