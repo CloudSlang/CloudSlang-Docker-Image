@@ -13,4 +13,4 @@ RUN apt-get install unzip \
 
 WORKDIR /usr/cslang/cslang/cslang/bin/
 
-CMD ["bash","cslang"]
+CMD ["sh","cslang"]
