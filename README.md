@@ -18,7 +18,7 @@ Dockerfile can be found here : https://github.com/CloudSlang/CloudSlang-Docker-I
 
 2. To trigger your first simple flow , type this cmd:
 
-  ``` run --f ../../content/io/cloudslang/base/print/print_text.sl --i text=first_flow ```
+  ``` run --f ../content/io/cloudslang/base/print/print_text.sl --i text=first_flow ```
  
 ### Issues & contributions
 
