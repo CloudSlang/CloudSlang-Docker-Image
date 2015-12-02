@@ -29,7 +29,5 @@ Or contact using our mailing list:
 https://groups.google.com/forum/#!forum/cloudslang
 
 For contributing look at: 
-https://docs.docker.com/contributing/contributing/
-http://www.cloudslang.io/#/docs#contributing-code
-
+http://cloudslang-docs.readthedocs.org/en/latest/developer_contribution.html
 
