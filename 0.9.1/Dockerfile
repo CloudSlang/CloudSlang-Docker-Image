@@ -1,8 +1,17 @@
-FROM java:openjdk-7-jre
+FROM ubuntu:14.04
 
-MAINTAINER CloudSlang
+MAINTAINER POC Factory
 
-RUN apt-get update -y && apt-get install -y python python-pip vim emacs openssh-server git tree
+RUN apt-get update -y && apt-get install -y python python-pip vim emacs openssh-server git tree openjdk-7-jre 
+
+
+RUN touch /etc/apt/sources.list.d/atomrepo.list \
+	&& echo "deb http://ppa.launchpad.net/webupd8team/atom/ubuntu trusty main" >> /etc/apt/sources.list.d/atomrepo.list \
+	&& echo "deb-src http://ppa.launchpad.net/webupd8team/atom/ubuntu trusty main" >> /etc/apt/sources.list.d/atomrepo.list
+
+RUN apt-get update -y && apt-get install -y --force-yes x11-apps atom
+
+RUN apm install language-cloudslang
 
 RUN groupadd -r cslang && useradd -r -g cslang cslang
 
@@ -18,7 +27,7 @@ RUN git clone --no-checkout --no-hardlinks https://github.com/CloudSlang/cloud-s
   && mv cloud-slang-content/.git . \
   && rm -rf cloud-slang-content \
   && git reset --hard HEAD
-
+  
 RUN cd /usr/cslang/cslang/python-lib && pip install -r requirements.txt -t . 
 
 ADD ./start-cslang.sh /usr/local/sbin/start-cslang.sh
@@ -30,9 +39,8 @@ RUN echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config \
   && echo "root:cslang" | chpasswd \
   && service ssh restart
 
+RUN ln -s /usr/cslang/cslang/bin/cslang /usr/sbin/cslang
+  
 EXPOSE 22
 
-WORKDIR /usr/cslang/cslang/bin/
-
 CMD [ "/usr/local/sbin/start-cslang.sh", "-s default"]
-
