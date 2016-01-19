@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER POC Factory
+MAINTAINER CloudSlang
 
 RUN apt-get update -y && apt-get install -y python python-pip vim emacs openssh-server git tree openjdk-7-jre 
 
