@@ -1,6 +1,6 @@
 FROM java:openjdk-7-jre
 
-MAINTAINER Meir Wahnon
+MAINTAINER CloudSlang
 
 RUN groupadd -r cslang && useradd -r -g cslang cslang
 
