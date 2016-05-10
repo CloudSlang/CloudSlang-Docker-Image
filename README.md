@@ -32,7 +32,7 @@ To run a flow with a CloudSlang prompt:
 
 Or, to run the flow without the prompt:
 
-``docker run --rm -ti cloudslang run --f ../content/io/cloudslang/.../flow.sl --i input1=value1``
+``docker run --rm cloudslang/cloudslang run --f ../content/io/cloudslang/.../flow.sl --i input1=value1``
 
 ###cloudslang/cloudslang-dev
 
