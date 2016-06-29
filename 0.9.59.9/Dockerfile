@@ -10,6 +10,6 @@ RUN mkdir -p /usr/cslang \
   && tar xvf cslang-cli-with-content.tar.gzip \
   && rm cslang-cli-with-content.tar.gzip
 
-WORKDIR /usr/cslang/cslang/bin/
+WORKDIR /usr/cslang/cslang-cli/bin/
 
 ENTRYPOINT ["sh","cslang"]

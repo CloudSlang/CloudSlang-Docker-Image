@@ -21,7 +21,7 @@ RUN mkdir -p /usr/cslang \
   && tar xvf cslang-cli-with-content.tar.gzip \
   && rm cslang-cli-with-content.tar.gzip
 
-WORKDIR /usr/cslang/cslang/
+WORKDIR /usr/cslang/cslang-cli/
 
 RUN git clone --no-checkout --no-hardlinks https://github.com/CloudSlang/cloud-slang-content.git \
   && mv cloud-slang-content/.git . \
