@@ -28,7 +28,7 @@ RUN git clone --no-checkout --no-hardlinks https://github.com/CloudSlang/cloud-s
   && rm -rf cloud-slang-content \
   && git reset --hard HEAD
   
-RUN cd /usr/cslang/cslang/python-lib && pip install -r requirements.txt -t . 
+RUN cd /usr/cslang/cslang-cli/python-lib && pip install -r requirements.txt -t .
 
 ADD ./start-cslang.sh /usr/local/sbin/start-cslang.sh
 
@@ -39,7 +39,7 @@ RUN echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config \
   && echo "root:cslang" | chpasswd \
   && service ssh restart
 
-RUN ln -s /usr/cslang/cslang/bin/cslang /usr/sbin/cslang
+RUN ln -s /usr/cslang/cslang-cli/bin/cslang /usr/sbin/cslang
   
 EXPOSE 22
 
