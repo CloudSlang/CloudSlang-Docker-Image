@@ -17,7 +17,7 @@ RUN groupadd -r cslang && useradd -r -g cslang cslang
 
 RUN mkdir -p /usr/cslang \
   && cd /usr/cslang \
-  && wget "https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.9.59.9/cslang-cli-with-content.tar.gzip" \
+  && wget "https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.9.60.0/cslang-cli-with-content.tar.gzip" \
   && tar xvf cslang-cli-with-content.tar.gzip \
   && rm cslang-cli-with-content.tar.gzip
 
