@@ -8,14 +8,14 @@ It provides Docker capabilities and integrations with Docker eco-system projects
 
 You can read more on it here : http://www.cloudslang.io/
 
-##Docker Image
+## Docker Image
 
 There are two CloudSlang Docker images. One (cloudslang/cloudslang) is a
 lightweight image meant to get you running CloudSlang flows as quickly as
 possible. The other image (cloudslang/cloudslang-dev) adds the tools necessary
 to develop CloudSlang flows.
 
-###cloudslang/cloudslang
+### cloudslang/cloudslang
 
 This image includes:
 
@@ -28,13 +28,13 @@ To get the image: ``docker pull cloudslang/cloudslang``
 To run a flow with a CloudSlang prompt:
 
 -  ``docker run -it cloudslang/cloudslang``
--  At the prompt enter: ``run --f ../content/io/cloudslang/.../flow.sl --i input1=value1``
+-  At the prompt enter: ``run --f ../content/io/cloudslang/base/print/print_text.sl --i text=Hi``
 
 Or, to run the flow without the prompt:
 
-``docker run --rm cloudslang/cloudslang run --f ../content/io/cloudslang/.../flow.sl --i input1=value1``
+``docker run --rm cloudslang/cloudslang run --f ../content/io/cloudslang/base/print/print_text.sl --i text=Hi``
 
-###cloudslang/cloudslang-dev
+### cloudslang/cloudslang-dev
 
 This image includes:
 
