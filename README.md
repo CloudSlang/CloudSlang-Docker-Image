@@ -59,8 +59,8 @@ To get the image: ``docker pull cloudslang/cloudslang-dev``
 Feel free to open issues on our GitHub page :
 https://github.com/CloudSlang/CloudSlang-Docker-Image/issues
 
-Or contact using our mailing list:
-https://groups.google.com/forum/#!forum/cloudslang
+Feel free to join us on Slack:
+https://cloudslang.signup.team/
 
 For contributing look at:
 http://cloudslang-docs.readthedocs.org/en/latest/developer_contribution.html
