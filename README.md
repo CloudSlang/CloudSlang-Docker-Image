@@ -1,5 +1,7 @@
 # CloudSlang-Docker-Image
 
+[![Join the chat at https://gitter.im/CloudSlang/CloudSlang-Docker-Image](https://badges.gitter.im/CloudSlang/CloudSlang-Docker-Image.svg)](https://gitter.im/CloudSlang/CloudSlang-Docker-Image?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ## Overview & links
 
 CloudSlang is a flow-based orchestration tool for managing your deployed applications.
