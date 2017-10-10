@@ -17,18 +17,18 @@ RUN groupadd -r cslang && useradd -r -g cslang cslang
 
 RUN mkdir -p /usr/cslang \
   && cd /usr/cslang \
-  && wget "https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-0.9.1/cslang-cli-with-content.tar.gzip" \
+  && wget "https://github.com/CloudSlang/cloud-slang/releases/download/cloudslang-1.0.10/cslang-cli-with-content.tar.gzip" \
   && tar xvf cslang-cli-with-content.tar.gzip \
   && rm cslang-cli-with-content.tar.gzip
 
-WORKDIR /usr/cslang/cslang/
+WORKDIR /usr/cslang/cslang-cli/
 
 RUN git clone --no-checkout --no-hardlinks https://github.com/CloudSlang/cloud-slang-content.git \
   && mv cloud-slang-content/.git . \
   && rm -rf cloud-slang-content \
   && git reset --hard HEAD
   
-RUN cd /usr/cslang/cslang/python-lib && pip install -r requirements.txt -t . 
+RUN cd /usr/cslang/cslang-cli/python-lib && pip install -r requirements.txt -t .
 
 ADD ./start-cslang.sh /usr/local/sbin/start-cslang.sh
 
@@ -39,7 +39,7 @@ RUN echo "StrictHostKeyChecking no" >> /etc/ssh/ssh_config \
   && echo "root:cslang" | chpasswd \
   && service ssh restart
 
-RUN ln -s /usr/cslang/cslang/bin/cslang /usr/sbin/cslang
+RUN ln -s /usr/cslang/cslang-cli/bin/cslang /usr/sbin/cslang
   
 EXPOSE 22
 
